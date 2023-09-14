@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #5372F0, #44eabb);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 440px;
+  border-radius: 10px;
+  background: #110f8f;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.container h2 {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 20px;
+  border-bottom: 2px solid #44eabb;
+  text-align: center;
+  color: #333;
+}
+
+.container .content {
+  margin: 25px 30px;
+}
+
+
+.content .word {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  word-break: break-all;
+  margin-bottom: 20px;
+  color: #44eabb;
+}
+
+.content .details p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.content input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 18px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+
+.content input:focus {
+  border-color: #44eabb;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content input::placeholder {
+  color: #aaa;
+}
+
+.content input:focus::placeholder {
+  color: #ccc;
+}
+
+.content .buttons {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.buttons button {
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 0;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 48%;
+  transition: transform 0.3s, background 0.3s;
+}
+
+
+.buttons button:active {
+  transform: scale(0.97);
+}
+
+.buttons .refresh-word {
+  background: #6C757D;
+}
+
+.buttons .refresh-word:hover {
+  background: #5f666d;
+}
+
+.buttons .check-word {
+  background: #5372F0;
+}
+
+.buttons .check-word:hover {
+  background: #2c52ed;
+}
+
+@media screen and (max-width: 470px) {
+  .container h2 {
+    font-size: 24px;
+    padding: 15px 20px;
+  }
+
+
+  .content .word {
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+  }
+
+  .container .content {
+    margin: 20px 20px 30px;
+  }
+
+
+  .content .details p {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .content input {
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .buttons button {
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
